@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/purchase.css">
+    <title>DARKLOG PURCHASE</title>
+   
+</head>
+<body>
+    <div class="wrapper" style="background-color:#233445 ;">
+        <div class="card" style="background-color:#ffffff9f;">
+            <div class="about" style="background-color: #10e8b2;">Checkout</div>
+            <!-- <div id="amount">$75</div> -->
+            <div id="purchase1">
+                <button id="purchase">Purchase</button>
+                <div class="varyAmount" style="display: none;">
+                    <button id="reduce">-</button><input type="number" value="1" id="number" required><button id="increase">+</button>
+                </div>
+            </div>
+            <div id="purchase2">
+                <h4 style="color: green;font-weight:900">PAYMENT IS VIA <span class="orange">BITCOIN</span></h4><br/>
+                <h4 style="color:green;font-weight: 900;">Enter email your order will be sent to</h4><br>
+                <p id="info">
+                    <input type="email" id="email" required placeholder="Your email" style="border: 2px solid black;">
+                    <h1 id="ari" style="font-size: 17px;color:green;">Log Info :Comes with email access online access and owners fullz info</h1><br/>
+                    <p style="color:green;font-weight: 900;">Items purchased, come with required details for cash out, all items details will be send to email you provided above, once you got email cash out within 4 hours</p>
+                </p>
+                <br><button id="next">Proceed to checkout</button>
+            </div>
+            <div id="purchase3">
+                <div>
+                    <div class="div1"> <img src="images/spin.svg" id="loading" alt="LOADING SVG"> Awaiting payment...</div>
+                    <!-- <div class="div2"><span class="pb">0</span>/<span class="orange" id="vv"></span> <span class="pb">BTC</span></div> -->
+                </div><br>
+                <div class="img-holder">
+                    <img src="images/btcImg.png" class="mb2" style="width: 60px;height: 60px;" alt="BTC ICON">
+                </div>
+                <div style="color: green;font-weight: 900;">
+                    You are paying with <span class="orange">BITCOIN</span><br/>
+                </div><br>
+                <div id="orderId"></div><br>
+                <div class="holder1">
+                    <div class="holder2">
+                        <button id="copy" class="copy">Copy</button>
+                        <button id="scan" class="copy">Scan</button>
+                    </div>
+                </div><br>
+                <div style="text-align: center;color: green;">
+                    <span class="pl" style="font-weight: 900;">Send only </span><span id="exx"></span><span class="pb"> BTC</span>
+                </div><br>
+                <input type="text" value="bc1qx2nlmhuvfdpqta98y5elugkanq3jyv7k5zcykl" id="btcAddress">
+                <div id="finalHolder">
+                    <div>
+                        <img src="images/btc.jpg" alt="BTC ADDRESS" style="width: 50%;height: 150px;">
+                    </div>
+                </div>
+                <div id="tacs"></div>
+                <br><div id="complain">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script><script src="js/purchase.js"></script>
+ 
+</body>
+
+</html>
